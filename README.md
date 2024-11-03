@@ -2,12 +2,14 @@
 
 This is a technical test for PREX, use port 80 to access the API.
 I decided to let the .env file in the repository to make it easier to run the project, but in a real scenario,
-it should be in the .gitignore file.
+it should be in the .gitignore file. The KEY for the Giphy API is also in the .env file for the sake of simplicity in the test
+but in a real scenario, it should be hidden too.
 
 Also, there are several ways to save the json response for the Middleware case, but I decided to save each response in a 
 json file and save the UUID in the DB.
 
-When running the tests, the database is reset, so the data is not saved.
+When running the tests, the database is reset, so the data is not saved. Following the good
+practices of testing, the data response is mocked.
 
 ## Installation
 
