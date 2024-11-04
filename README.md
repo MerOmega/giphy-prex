@@ -11,6 +11,20 @@ json file and save the UUID in the DB.
 When running the tests, the database is reset, so the data is not saved. Following the good
 practices of testing, the data response is mocked.
 
+## IMPORTANT
+As step 5 says, the command "php artisan app:set-up" will run all the migrations, seeds and passport:install command, and just
+in case generates a new key for the application.
+
+There is a user for testing, but you can also create one with the fake user command or
+the register endpoint.
+
+```json
+{
+    "email": "testuser@example.com",
+    "password": "password123"
+}
+```
+
 ## Installation
 
 ### STEP 1:
